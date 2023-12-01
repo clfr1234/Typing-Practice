@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Typing Game</h1>
+    <div id="gameContainer">
+        <div id="timer">0.00s</div>
+        <div id="sentence" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">따라 쓸 문장이 표시됩니다!</div>
+        <textarea id="answer"></textarea>
+        <button type="button" id="startBtn" onclick="start()">시작</button>
+        <button type="button" id="resetBtn" onclick="reset()">종료</button>
+    </div>
+    <script>
+        document.querySelector('#startBtn').focus();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
